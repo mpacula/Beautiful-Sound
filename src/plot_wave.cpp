@@ -67,8 +67,6 @@ int main(int argc, char** argv)
     opt.outputPath = argv[i];
   }
 
-  opt.outputPath = argv[1];
-
   SF_INFO sndInfo;
   sndInfo.format = 0;
   SNDFILE* inFile;
