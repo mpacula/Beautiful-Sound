@@ -18,6 +18,5 @@ int pngt_get_index(const PngImage*, int, int);
 void pngt_set_pixel(const PngImage*, int, int, int*);
 void pngt_get_pixel(const PngImage*, int, int, int*);
 void pngt_draw_rect(const PngImage*, int, int, int, int, int*);
-void pngt_glow(PngImage*, PngImage*, double);
 
 #endif
