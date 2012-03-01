@@ -1,0 +1,46 @@
+INTRODUCTION
+
+Beautiful Sound is the author's exploratory DSP project. The goal is
+to implement tools for creating visually pleasing images of sound and
+music.
+
+All tools read and write stereo WAVE input. If you need to use other
+formats, there's a number of tools that will transcode your files
+to/from WAVE, such as the excellent mpg123.
+
+
+
+BUILDING
+
+Before building Beautiful Sound, make sure you have the required
+dependencies. These are:
+
+    - g++ 4.6.1
+    - libsndfile-dev
+    - libfftw3-dev
+    - libpng-dev
+
+Once you've verified that you have the prerequisites, build Beautiful
+Sound by calling make:
+
+    $ make
+
+The binaries will be placed in the 'bin' directory.
+
+
+PROJECT WEBSITE
+
+The project's website is http://beautiful-sound.mpacula.com
+
+
+
+AUTHOR & LICENSING
+
+Beautiful Sound was written by Maciej Pacula (maciej.pacula@gmail.com)
+and is distributed as free software under the terms of the AGPL v3
+license. See the file COPYING for details.
+
+If you would like to incorporate one or more Beautiful Sound tools in
+proprietary product, please contact the author and inquire about a
+commercial license.
+

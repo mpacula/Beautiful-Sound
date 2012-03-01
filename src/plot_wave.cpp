@@ -76,6 +76,12 @@ int main(int argc, char** argv)
   }
   print_info(&sndInfo);
 
+  if(sndInfo.channels != 2) {
+    fprintf(stderr, "Only stereo input is supported, but your file has %d channel(s)\n",
+            sndInfo.channels);
+    return 1;
+  }
+
   const size_t N = 100000;
   const size_t buf_len = N*sndInfo.channels;
   double* readBuffer = (double*)malloc(buf_len*sizeof(double));
