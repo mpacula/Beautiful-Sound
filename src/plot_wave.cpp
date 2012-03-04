@@ -22,7 +22,7 @@ typedef struct
 
 void usage(char **argv) 
 {
-  fprintf(stderr, "Usage: %s OUT.PNG -w WIDTH -h HEIGHT \n", argv[0]);
+  fprintf(stderr, "Usage: %s OUT.PNG [-w WIDTH] [-h HEIGHT] \n", argv[0]);
 }
 
 void print_info(const SF_INFO* info) 

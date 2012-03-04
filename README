@@ -28,6 +28,21 @@ Sound by calling make:
 The binaries will be placed in the 'bin' directory.
 
 
+
+USING BEAUTIFUL SOUND
+
+To generate a waveform from a WAVE file, pipe the file to
+bin/plot-wave:
+
+cat audio.wav | bin/plot-wave out.png
+
+The waveform will be written to out.png in 1080p resulution. You can
+change the resolution through the -w and -h arguments:
+
+cat audio.wav | bin/plot-wave out.png -w 2560 -h 1600
+
+
+
 PROJECT WEBSITE
 
 The project's website is http://beautiful-sound.mpacula.com
