@@ -1,5 +1,6 @@
 #include <stdlib.h>
 #include <stdio.h>
+#include <string.h>
 #include <math.h>
 #include "pcm.h"
 
@@ -164,6 +165,8 @@ void ms_render(int length, double* samples, const PngImage* img, int x, int y, i
       int b = rgb[2] >= 0 ? (int)(intensity*rgb[2]) : -1;
       int color[3] = { r, g, b };
       pngt_set_pixel(img, ix, y-q, color);
+      
+//       printf("%d %d %d\n", ix,  y-q, *color);
     }
   }
 
